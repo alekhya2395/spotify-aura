@@ -1,0 +1,10 @@
+{
+  "name": "Spotify Aura",
+  "short_name": "Aura",
+  "description": "AI-powered contextual music discovery companion",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#121212",
+  "orientation": "portrait"
+}

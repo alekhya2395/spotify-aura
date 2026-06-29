@@ -1,0 +1,75 @@
+export const MOODS = [
+  "Chill",
+  "Energetic",
+  "Melancholic",
+  "Focused",
+  "Euphoric",
+  "Nostalgic",
+  "Dreamy",
+  "Angry",
+  "Romantic",
+  "Empowered",
+  "Anxious",
+  "Peaceful",
+] as const;
+
+export const ACTIVITIES = [
+  { label: "Studying", icon: "📚" },
+  { label: "Working Out", icon: "🏋️" },
+  { label: "Driving", icon: "🚗" },
+  { label: "Cooking", icon: "🍳" },
+  { label: "Walking", icon: "🚶" },
+  { label: "Sleeping", icon: "😴" },
+  { label: "Working", icon: "💻" },
+  { label: "Meditating", icon: "🧘" },
+  { label: "Commuting", icon: "🚇" },
+] as const;
+
+export const DISCOVERY_INTENTS = [
+  "Find hidden gems",
+  "Explore new genres",
+  "Match my mood",
+  "Energize me",
+  "Help me focus",
+  "Something emotional",
+  "Party vibes",
+  "Wind down",
+  "Background music",
+  "Discover artists",
+] as const;
+
+export const PERSONALITY_TAGS = [
+  "Adventurous",
+  "Introspective",
+  "Social",
+  "Analytical",
+  "Creative",
+  "Calm",
+  "Intense",
+  "Playful",
+  "Minimalist",
+  "Eclectic",
+] as const;
+
+export const GENRES = [
+  "indie",
+  "pop",
+  "rock",
+  "hip-hop",
+  "electronic",
+  "r-n-b",
+  "jazz",
+  "classical",
+  "folk",
+  "metal",
+  "ambient",
+  "lo-fi",
+  "soul",
+  "punk",
+  "latin",
+  "country",
+  "dance",
+  "blues",
+  "reggae",
+  "alt-rock",
+] as const;
