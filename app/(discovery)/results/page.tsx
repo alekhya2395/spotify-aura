@@ -166,7 +166,7 @@ export default function ResultsPage() {
       <section className="space-y-2.5">
         <h2 className="text-[14px] font-bold text-white">Curated for You</h2>
         <div className="-mx-4 overflow-x-auto overflow-y-hidden snap-x snap-mandatory scrollbar-hide">
-          <div className="flex flex-nowrap gap-4 w-max px-4 pr-6 pb-3">
+          <div className="flex flex-nowrap gap-3 w-max px-4 pr-6 pb-3">
             {playlists.map((playlist) => (
               <PlaylistCard key={playlist.id} playlist={playlist} />
             ))}
