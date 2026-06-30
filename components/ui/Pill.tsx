@@ -3,7 +3,7 @@
 import { cn } from "@/lib/utils/cn";
 
 export const chipBaseClass =
-  "inline-flex items-center justify-center h-[36px] min-w-0 px-2 text-[10px] font-semibold rounded-full whitespace-nowrap overflow-hidden text-ellipsis";
+  "flex items-center justify-center w-full h-[40px] px-1.5 text-[10px] font-medium rounded-full whitespace-nowrap";
 
 interface PillProps {
   label: string;

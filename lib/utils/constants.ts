@@ -26,16 +26,16 @@ export const ACTIVITIES = [
 ] as const;
 
 export const DISCOVERY_INTENTS = [
-  "Find hidden gems",
-  "Explore new genres",
-  "Match my mood",
+  "Hidden gems",
+  "New genres",
+  "My mood",
   "Energize me",
-  "Help me focus",
-  "Something emotional",
+  "Focus",
+  "Emotional",
   "Party vibes",
   "Wind down",
-  "Background music",
-  "Discover artists",
+  "Background",
+  "Artists",
 ] as const;
 
 export const PERSONALITY_TAGS = [
