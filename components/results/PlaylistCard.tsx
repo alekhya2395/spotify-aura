@@ -13,10 +13,10 @@ export function PlaylistCard({ playlist }: PlaylistCardProps) {
       href={getSpotifySearchUrl(playlist.name)}
       target="_blank"
       rel="noopener noreferrer"
-      className="group flex-shrink-0 w-[140px] space-y-2 cursor-pointer rounded-lg p-1 -m-1 transition-colors hover:bg-white/[0.03]"
+      className="group snap-start flex-shrink-0 w-[148px] space-y-2 cursor-pointer rounded-xl p-2 transition-colors hover:bg-white/[0.04]"
       aria-label={`Open ${playlist.name} in Spotify`}
     >
-      <div className="relative w-[140px] h-[140px] rounded-md overflow-hidden bg-spotify-elevated ring-1 ring-transparent group-hover:ring-white/[0.08] group-hover:brightness-110 transition-all">
+      <div className="relative w-full aspect-square rounded-md overflow-hidden bg-spotify-elevated ring-1 ring-white/[0.06] group-hover:ring-white/[0.12] group-hover:brightness-110 transition-all">
         <div className="absolute inset-0 flex items-center justify-center">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" className="text-spotify-text-subdued">
             <path d="M4 6h16M4 10h16M4 14h12M4 18h8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
