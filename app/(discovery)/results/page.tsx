@@ -153,8 +153,8 @@ export default function ResultsPage() {
       {/* Suggested Artists */}
       <section className="space-y-2.5">
         <h2 className="text-[14px] font-bold text-white">Artists to Explore</h2>
-        <div className="-mx-4 px-4 overflow-x-auto overflow-y-hidden snap-x snap-mandatory scrollbar-hide">
-          <div className="flex flex-nowrap gap-4 w-max pb-3">
+        <div className="-mx-4 overflow-x-auto overflow-y-hidden snap-x snap-mandatory scrollbar-hide">
+          <div className="flex flex-nowrap gap-4 w-max px-4 pr-6 pb-3">
             {artists.map((artist) => (
               <ArtistCard key={artist.id} artist={artist} />
             ))}
@@ -165,8 +165,8 @@ export default function ResultsPage() {
       {/* Curated Playlists */}
       <section className="space-y-2.5">
         <h2 className="text-[14px] font-bold text-white">Curated for You</h2>
-        <div className="-mx-4 px-4 overflow-x-auto overflow-y-hidden snap-x snap-mandatory scrollbar-hide">
-          <div className="flex flex-nowrap gap-4 w-max pb-3">
+        <div className="-mx-4 overflow-x-auto overflow-y-hidden snap-x snap-mandatory scrollbar-hide">
+          <div className="flex flex-nowrap gap-4 w-max px-4 pr-6 pb-3">
             {playlists.map((playlist) => (
               <PlaylistCard key={playlist.id} playlist={playlist} />
             ))}

@@ -13,7 +13,7 @@ export function PlaylistCard({ playlist }: PlaylistCardProps) {
       href={getSpotifySearchUrl(playlist.name)}
       target="_blank"
       rel="noopener noreferrer"
-      className="group snap-start flex-shrink-0 w-[148px] space-y-2 cursor-pointer rounded-xl p-2 transition-colors hover:bg-white/[0.04]"
+      className="group snap-start flex-shrink-0 w-[160px] space-y-2 cursor-pointer rounded-xl p-2 transition-colors hover:bg-white/[0.04]"
       aria-label={`Open ${playlist.name} in Spotify`}
     >
       <div className="relative w-full aspect-square rounded-md overflow-hidden bg-spotify-elevated ring-1 ring-white/[0.06] group-hover:ring-white/[0.12] group-hover:brightness-110 transition-all">
