@@ -15,10 +15,10 @@ export function ArtistCard({ artist }: ArtistCardProps) {
       href={getSpotifySearchUrl(artist.name)}
       target="_blank"
       rel="noopener noreferrer"
-      className="group flex-shrink-0 w-[120px] flex flex-col items-center text-center space-y-2 cursor-pointer rounded-lg p-1 -m-1 transition-colors hover:bg-white/[0.03]"
+      className="group snap-start flex-shrink-0 w-[calc((100vw-64px)/2.5)] min-w-[120px] max-w-[160px] flex flex-col items-center text-center gap-2.5 cursor-pointer rounded-xl p-3 transition-colors hover:bg-white/[0.04]"
       aria-label={`Open ${artist.name} in Spotify`}
     >
-      <div className="relative w-[100px] h-[100px] rounded-full overflow-hidden bg-spotify-elevated ring-1 ring-transparent group-hover:ring-white/[0.08] transition-all">
+      <div className="relative w-full aspect-square max-w-[112px] rounded-full overflow-hidden bg-spotify-elevated ring-1 ring-white/[0.06] group-hover:ring-white/[0.12] transition-all">
         <div className="absolute inset-0 flex items-center justify-center">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-spotify-text-subdued">
             <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
@@ -37,7 +37,7 @@ export function ArtistCard({ artist }: ArtistCardProps) {
         )}
       </div>
 
-      <div className="space-y-0.5 w-full">
+      <div className="space-y-0.5 w-full min-w-0">
         <p className="text-[12px] font-bold text-white truncate group-hover:text-spotify-green-light transition-colors">
           {artist.name}
         </p>
@@ -47,11 +47,11 @@ export function ArtistCard({ artist }: ArtistCardProps) {
         <p className="text-[9px] font-semibold text-spotify-green opacity-0 group-hover:opacity-100 transition-opacity">
           Open in Spotify
         </p>
-        <div className="flex flex-wrap justify-center gap-1 pt-0.5">
+        <div className="flex flex-wrap justify-center gap-1 pt-1">
           {artist.genres.slice(0, 2).map((genre) => (
             <span
               key={genre}
-              className="text-[9px] font-medium px-1.5 py-px rounded-full bg-white/[0.05] text-white/50"
+              className="text-[9px] font-medium px-2 py-0.5 rounded-full bg-white/[0.06] text-white/50"
             >
               {genre}
             </span>

@@ -152,8 +152,8 @@ export default function ResultsPage() {
 
       {/* Suggested Artists */}
       <section className="space-y-2.5">
-        <h2 className="text-[14px] font-bold text-white">Artists to Explore</h2>
-        <div className="flex gap-3 overflow-x-auto pb-2 -mx-4 px-4 scrollbar-hide">
+        <h2 className="text-[14px] font-bold text-white px-1">Artists to Explore</h2>
+        <div className="flex gap-4 overflow-x-auto pb-3 -mx-4 px-4 snap-x snap-mandatory scrollbar-hide">
           {artists.map((artist) => (
             <ArtistCard key={artist.id} artist={artist} />
           ))}
